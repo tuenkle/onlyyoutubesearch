@@ -18,25 +18,25 @@ function search(key, search, maxResults){
     fetch(url).then((response) => response.json()).then((data) => data.items.forEach(item => {
         switch (i) {
             case 1:
-                iframe1.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe1.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 2:
-                iframe2.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe2.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 3:
-                iframe3.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe3.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 4:
-                iframe4.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe4.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 5:
-                iframe5.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe5.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 6:
-                iframe6.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe6.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 7:
-                iframe7.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe7.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 8:
-                iframe8.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe8.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 9:
-                iframe9.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe9.src = `https://www.youtube.com/embed/${item.id.videoId}`
             case 10:
-                iframe10.src = `http://www.youtube.com/embed/${item.id.videoId}`
+                iframe10.src = `https://www.youtube.com/embed/${item.id.videoId}`
             default:
                 break;
         }
