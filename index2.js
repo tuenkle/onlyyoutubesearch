@@ -14,7 +14,7 @@ const searchName = document.getElementById("search");
 
 function search(key, search, maxResults){
     let url = "https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search
-    let i = 0
+    let i = 1
     fetch(url).then((response) => response.json()).then((data) => data.items.forEach(item => {
         switch (i) {
             case 1:
