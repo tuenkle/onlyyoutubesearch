@@ -16,6 +16,7 @@ function search(key, search, maxResults){
     let url = "https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search
     let i = 1
     fetch(url).then((response) => response.json()).then((data) => data.items.forEach(item => {
+        console.log(data)
         switch (i) {
             case 1:
                 iframe1.src = `https://www.youtube.com/embed/${item.id.videoId}`
@@ -45,11 +46,11 @@ function search(key, search, maxResults){
 }
 
 submit.onclick = function(){
-    search(API_KEY, searchName.value, 10)
+    search(API_KEY, searchName.value, 2)
 }
 document.addEventListener("keyup", function(e){
     console.log(e.key)
     if(e.key === "Enter"){
-        search(API_KEY, searchName.value, 10)
+        search(API_KEY, searchName.value, 2)
     }
 })
